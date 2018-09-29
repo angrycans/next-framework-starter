@@ -1,0 +1,21 @@
+.DS_Store
+yarn.lock
+.next
+package-lock.json
+npm-debug.log
+node_modules/
+resources/
+.github/
+build/
+dist/
+src/next.config.js
+config/.conf.json
+test/coverage
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

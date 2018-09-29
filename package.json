@@ -1,0 +1,20 @@
+{
+  "name": "next-framework-starter",
+  "version": "0.0.1",
+  "description": "nextjs mbox typescript ssr ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nextjs",
+    "mbox",
+    "typescript",
+    "ssr"
+  ],
+  "author": "acans",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}
