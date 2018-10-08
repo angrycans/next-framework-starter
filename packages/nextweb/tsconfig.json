@@ -1,7 +1,7 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "target": "es5",
+        "target": "esnext",
         "module": "esnext",
         "jsx": "preserve",
         "allowJs": true,
@@ -14,6 +14,14 @@
         "sourceMap": true,
         "skipLibCheck": true,
         "baseUrl": ".",
+        "paths": {
+            "*": [
+                "src/*"
+            ],
+            "@kits/*": [
+                "src/kits/*"
+            ]
+        },
         "typeRoots": [
             "./node_modules/@types"
         ],

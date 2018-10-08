@@ -76,7 +76,6 @@ const nextConfig = {
             //  console.log('-->2', entries);
             return entries
         }
-
         config.module.rules.push({
             test: /\.(png|jpg|svg|eot|otf|ttf|woff|woff2)$/,
             use: {

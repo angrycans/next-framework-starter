@@ -1,15 +1,12 @@
 import React from 'react'
-import { Home } from '../components/home/home'
+import { About } from '../components/about/about'
 import { Page } from '../components/page'
 
-
-
-export default class Index extends React.Component {
+export default class AboutUs extends React.Component {
     render() {
-        
         return (
             <Page>
-                <Home />
+                <About />
             </Page>
         )
     }

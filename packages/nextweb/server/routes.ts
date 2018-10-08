@@ -34,6 +34,8 @@ const ssrCache = new LRUCache({
   function renderAndCache(ctx, pagePath, queryParams?: object) {
     const key = getCacheKey(ctx.req)
 
+    console.log("server", 'pagePath');
+
     // If we have a page in the cache, let's serve it
     if (ssrCache.has(key)) {
       console.log(`CACHE HIT: ${key}`)
@@ -56,6 +58,13 @@ const ssrCache = new LRUCache({
   }
 
   router.get('/', (ctx) => renderAndCache(ctx, '/'))
+
+  router.get('/b/:id', (req, res) => {
+    console.log("server", "b/id");
+    const actualPage = '/blog/blogdetail'
+    const queryParams = { title: req.params.id }
+    nextApp.render(req, res, actualPage, queryParams)
+  })
 
   // preventing /blog from displaying
   // see https://github.com/zeit/next.js/issues/2682
