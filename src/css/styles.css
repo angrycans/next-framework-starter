@@ -1,0 +1,7 @@
+@import 'color.css';
+
+.home {
+  color: var(--colorPrimary);
+  background: var(--colorSecondary);
+ 
+}
